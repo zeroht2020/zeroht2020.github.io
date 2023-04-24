@@ -1,0 +1,279 @@
+<!--RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Tuan Kiet
+ID: s3892188--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,700;1,300;1,500;1,600&family=Roboto+Slab:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <title>FahaKietStore Romance books</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+           <div class="navbar">
+               <div class="logo">
+                   <a href="index.html"><img src="images/logo.png" width="125px"></a>
+               </div>
+               <nav>
+                   <ul id="MenuItems">
+                       <li><a href="index.html">Home</a></li>
+                    
+                       <li><a href="aboutus.html">Contact Us</a></li>
+                       <li class="dropdown">
+                           <a href="#" class="dropbtn">Categories</a>
+                           <div class="dropdown-content">
+                             <a href="products.html">Romance Books</a>
+                             <a href="products2.html">Children Books</a>
+                             <a href="#">Text Books</a>
+                           </div>
+                         </li>
+                       <li><a href="#contact">About Us</a></li>
+                   </ul>
+               </nav>
+               <img src="images/cart.png" width="30px" height="30px">
+               <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div> 
+
+        </div>
+    </div>
+
+<!-------------------main-------------------->
+
+    <div class="col-2">
+    <h1>Romance books</h1>
+    </div>
+    <div class="small-container">
+        <div class="row row-2">
+            <select>
+                <option>Default Shorting</option>
+                <option>Comics</option>
+                <option>Novels</option>
+                <option>LGBT+</option>
+            </select>
+        </div>
+        <h2 class="title">novels</h2>
+        <div class="row">
+            <div class="col-4">
+                <a href="productdetail.html"><img src="images/product-1.jpg"></a>
+                <h4>Danh cap trai tim anh</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$10</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg">
+                <h4>Em la vi sao trong mat anh</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                <p>$9</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg">
+                <h4>Trang vi sao</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$15</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg">
+                <h4>Dem truoc binh minh</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$8</p>
+            </div>
+        </div>
+        <h2 class="title">comics</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-8.jpg" alt="book">
+                <h4>Young Romance</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$10</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-10.jpg">
+                <h4>Girls Romances</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                <p>$9</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-11.jpg">
+                <h4>Lovelorn</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$15</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-12.jpg">
+                <h4>Teen Confessions</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$8</p>
+            </div>
+        </div>
+        <h2 class="title">LGBT+</h2>
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-13.jpg">
+                <h4>Cheer up!</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$10</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-14.jpg">
+                <h4>Bingo Love</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                <p>$9</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-15.jpg">
+                <h4>BREAKS</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$15</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-16.jpg">
+                <h4>THE Backstages</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$8</p>
+            </div>
+
+        </div>
+        <div class="mores">
+        <a href="" class="btn"> for more Books &#8594;</a>
+        </div>
+    </div>
+
+
+<!--------footer-------->
+<section id="contact"> 
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Our Purpose is to create a world that everybody can
+                    read and know more about the world</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms</li>
+                        <a href="aboutus.html"><li>Contact us</li></a>
+                        <a href="https://www.google.com/maps"><li>address</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com"><li>Facebook</li></a>
+                        <a href="https://www.twitter.com"><li>Twitter</li></a>
+                        <a href="https://www.youtube.com"><li>Youtube</li></a>
+                        <a href="https://www.Instagram.com"><li>Instagram</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - NTK</p>
+        </div>
+    </div>
+</section>    
+    <!-------js for toggle menu----->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px" 
+                }
+        }
+    </script>
+<!------untouch------>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>    
+</body>
+</html>

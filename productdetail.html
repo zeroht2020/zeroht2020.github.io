@@ -1,0 +1,219 @@
+<!--RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Tuan Kiet
+ID: s3892188.--->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,700;1,300;1,500;1,600&family=Roboto+Slab:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <title>FahaKietStore categories</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+           <div class="navbar">
+               <div class="logo">
+                   <a href="index.html"><img src="images/logo.png" width="125px"></a>
+               </div>
+               <nav>
+                   <ul id="MenuItems">
+                       <li><a href="index.html">Home</a></li>
+                       
+                       <li><a href="aboutus.html">Contact Us</a></li>
+                       <li class="dropdown">
+                           <a href="#" class="dropbtn">Categories</a>
+                           <div class="dropdown-content">
+                             <a href="products.html">Romance Books</a>
+                             <a href="products2.html">Children Books</a>
+                             <a href="#">Text Books</a>
+                           </div>
+                         </li>
+                       <li><a href="#contact">About Us</a></li>
+
+                   </ul>
+               </nav>
+               <img src="images/cart.png" width="30px" height="30px">
+               <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+            </div> 
+
+        </div>
+    </div>
+<!---------single product details------>
+    <div class="small-container single-product">
+        <div class="row">
+    <div class="col-2">
+        <img src="images/product-1.jpg" width="100%" id="ProductImg">
+                
+        <div class="small-img-row">
+        <div class="small-img-col">
+        <img src="images/gallery-1.jpg" width="100%" class="small-img">
+        </div>
+        <div class="small-img-col">
+        <img src="images/gallery-2.jpg" width="100%" class="small-img">
+        </div>
+        <div class="small-img-col">
+        <img src="images/gallery-3.jpg" width="100%" class="small-img">
+        </div>
+        <div class="small-img-col">
+        <img src="images/gallery-4.jpg" width="100%" class="small-img">
+        </div>
+        </div>
+            </div>
+            <div class="col-2">
+                <p><a href="index.html">Home</a> /<a href="products.html">Category</a>/ Romance</p>
+                <h1>Danh cap trai tim anh</h1>
+                <h4>$10</h4>
+                <input type="number" value="1">
+                <a href="" class="btn">Add To Cart</a>
+                <h3>Product Details</h3>
+                <i class="fa fa-ident"></i>
+                <br>
+                <p>Lo Tri Y is a girl who grew up in a difficult and needy highland. Her family situation
+                    is very special, her father accidentally pushed her mother to
+                    death and went to prison, Lo Tri Y lives with her youngest aunt.
+                    Because of her dream of becoming a pilot, she studied hard, but because of circumstances
+                    ,Lo Tri Y faked a political resume to get into the Academy of Flight Technology.
+                    Also at the academy.</p>
+            </div>
+        </div>
+    </div>
+
+<!-------title------->
+    <div class="small-container">
+        <div class="row row-2">
+            <h2>Related Products</h2>
+        </div>
+    </div>
+<!------products------->
+    <div class="small-container">
+        <div class="row">
+            <div class="col-4">
+                <img src="images/product-14.jpg">
+                <h4>Bingo Love</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$10</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg">
+                <h4>Em la vi sao trong mat anh</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                <p>$9</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg">
+                <h4>Trang vi sao </h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$15</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg">
+                <h4>Dem truoc binh minh</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$8</p>
+            </div>
+        
+        </div>
+        <div class="mores">
+        <a href="products.html" class="btn"> for more books &#8594;</a>
+        </div>
+    </div>
+
+
+<!--------footer-------->
+<section id="contact"> 
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Our Purpose is to create a world that everybody can
+                    read and know more about the world</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms</li>
+                        <a href="aboutus.html"><li>Contact us</li></a>
+                        <a href="https://www.google.com/maps"><li>address</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com"><li>Facebook</li></a>
+                        <a href="https://www.twitter.com"><li>Twitter</li></a>
+                        <a href="https://www.youtube.com"><li>Youtube</li></a>
+                        <a href="https://www.Instagram.com"><li>Instagram</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - NTK</p>
+        </div>
+    </div>
+</section>    
+    <!-------js for toggle menu----->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px" 
+                }
+        }
+    </script>
+<!------untouch------>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>    
+</body>
+</html>

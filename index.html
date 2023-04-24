@@ -1,0 +1,367 @@
+<!--RMIT University Vietnam
+Course: COSC2430 Web Programming
+Semester: 2023A
+Assessment: Assignment 1
+Author: Nguyen Tuan Kiet
+ID: s3892188.--->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,700;1,300;1,500;1,600&family=Roboto+Slab:wght@200;300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+    <title>FahaKietStore Ecommerce Website Design</title>
+
+</head>
+<body>
+    <div class="header">
+     <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/logo.png" width="125px" alt="logo"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="aboutus.html">Contact Us</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Categories</a>
+                        <div class="dropdown-content">
+                          <a href="products.html">Romance Books</a>
+                          <a href="products2.html">Children Books</a>
+                          <a href="#">Text Books</a>
+                        </div>
+                      </li>
+                    <li><a href="#contact">About Us</a></li>
+
+                </ul>
+            </nav>
+            <img src="images/cart.png" width="30px" height="30px">
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div> 
+          <div class="row">
+            <div class="col-2">
+                    <h1>Book is the knowledge<br> of the world!</h1>
+                    <p>to know more about the things that you haven't known before
+                        and to understand the things that out of your mind.</p>
+                    <a href="" class="btn"> Explore Now &#8594;</a>
+            </div>
+            <div class="col-2">
+                <img src="images/image1.png">
+            </div>
+          </div>
+     </div>
+    </div>
+
+    <!------ featured categories ------>
+        <div class="categories">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <a href="products.html"><img src="images/category-1.png" width="300px"></a>
+                    </div>
+                    <div class="col-3">
+                        <a href="products2.html"><img src="images/category-2.png" width="350px"></a>
+                    </div>
+                    <div class="col-3">
+                        <img src="images/category-3.png" width="325px">
+                    </div>
+               </div>
+            </div>
+  
+        </div>
+
+<!------ romance products ------>
+<section id="products">    
+    <div class="small-container">
+        <a href="products.html"><h2 class="title">romance books</h2></a>
+        <div class="row">
+            <div class="col-4">
+                <a href="productdetail.html"><img src="images/product-1.jpg" alt="book"></a>
+                <a href="productdetail.html"><h4>Danh cap trai tim anh</h4></a>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$10</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-2.jpg" alt="book">
+                <h4>Em la vi sao trong mat anh</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                <p>$9</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-3.jpg" alt="book">
+                <h4>TRang va sao vi</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$15</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-4.jpg" alt="book">
+                <h4>Dem truoc binh minh</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$8</p>
+            </div>
+        </div>
+        <a href="products2.html"><h2 class="title">Children Books</h2></a>
+        <div class="row">
+            <div class="col-4">
+                <a href="productdetail2.html"><img src="images/product-5.jpg" alt="book"></a>
+                <h4>Chuot Nha Chuot Dong</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$10</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-6.jpg" alt="book">
+                <h4>Su tu va chuot nhat</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                <p>$9</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-7.jpg" alt="book">
+                <h4>Nhac la</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$15</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-9.jpg" alt="book">
+                <h4>The companions</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$8</p>
+            </div>
+        </div>
+    </div>
+    <div class="small-container">
+        <a href=""><h2 class="title">Text Book</h2></a>
+        <div class="row">
+            <div class="col-4">
+                <a href="productdetail.html"><img src="images/product-26.jpg" alt="book"></a>
+                <a href="productdetail.html"><h4>GILDEROY LOCKHARTS</h4></a>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$10</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-27.jpg" alt="book">
+                <h4>POSTER DESIGN</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-o"></i>
+                <p>$9</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-28.jpg" alt="book">
+                <h4>A GUIDE TO LETTERING</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$15</p>
+            </div>
+            <div class="col-4">
+                <img src="images/product-25.jpg" alt="book">
+                <h4>UNFOGGING THE FUTUR</h4>
+                <div class="rating"></div>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-o"></i>
+                <p>$8</p>
+            </div>
+        </div>
+        <div class="mores">
+            <a href="" class="btn"> for more books &#8594;</a>
+        </div>
+    </div>  
+</section>    
+<!------ offer ------>
+    <div class="offer">
+        <div class="small-container">
+                <div class="row">
+                    <div class="col-2">
+                        <img src="images/exclusive.png" alt="offer-img">
+                    </div>
+                    <div class="col-2">
+                        <p>Limited product available on FAHAKIET</p>
+                        <h1>jujutsu kaisen</h1>
+                        <small> limited edition with hard paper
+                        cover and a character's card with different
+                        positions.</small>
+                        <a href="" class="btn">Buy Now &#8594;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+<!------- testimontial ------->
+    <div class="testimonial">
+        <div class="small-container">
+            <div class="row">
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                     <p> i have buy a lot of good books in FAHAKIET</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-1.png">
+                    <h3>Elizabed Pillow</h3>
+                </div>
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p> I love buying books in FAHAKIET, because there is a lot of benefits that you can be received</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </div>
+                    <img src="images/user-2.png">
+                    <h3>Man da gay</h3>
+                </div>    
+                <div class="col-3">
+                    <i class="fa fa-quote-left"></i>
+                    <p> reading is one of my habit and in FAHAKIET i feel i am treated well by its services</p>
+                    <div class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star-o"></i>
+                    </div>
+                    <img src="images/user-1.png">
+                    <h3>Pub da Queen</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SKVcQnyEIT8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+    
+<!--------footer-------->
+<section id="contact"> 
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col-1">
+                    <h3>Download Our App</h3>
+                    <p>Download App for Android and ios mobile phone</p>
+                    <div class="app-logo">
+                        <img src="images/play-store.png">
+                        <img src="images/app-store.png">
+                    </div>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/logo.png">
+                    <p>Our Purpose is to create a world that everybody can
+                    read and know more about the world</p>
+                </div>
+                <div class="footer-col-3">
+                    <h3>Useful Links</h3>
+                    <ul>
+                        <li>About Us</li>
+                        <li>Privacy Policy</li>
+                        <li>Terms</li>
+                        <a href="aboutus.html"><li>Contact us</li></a>
+                        <a href="https://www.google.com/maps"><li>address</li></a>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Follow us</h3>
+                    <ul>
+                        <a href="https://www.facebook.com"><li>Facebook</li></a>
+                        <a href="https://www.twitter.com"><li>Twitter</li></a>
+                        <a href="https://www.youtube.com"><li>Youtube</li></a>
+                        <a href="https://www.Instagram.com"><li>Instagram</li></a>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">Copyright 2023 - NTK</p>
+        </div>
+    </div>
+</section>    
+    <!-------js for toggle menu----->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle(){
+            if(MenuItems.style.maxHeight == "0px")
+                {
+                    MenuItems.style.maxHeight = "200px"
+                }
+            else
+                {
+                    MenuItems.style.maxHeight = "0px" 
+                }
+        }
+    </script>
+<!------untouch------>
+<script>
+	var scroll = new SmoothScroll('a[href*="#"]');
+</script>    
+</body>
+</html>
